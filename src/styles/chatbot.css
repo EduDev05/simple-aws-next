@@ -1,0 +1,218 @@
+/*  ##################################################  
+    ####      Estilo del llamado del bot          ####
+    ##################################################  */
+
+    .saludo_bot {
+        /* position: fixed; */
+        position: absolute!important;
+        left: 0px!important;
+        top: 0px!important;
+        bottom: 20px;
+        right: 0px;
+        z-index: 100;
+      
+        background-color: var(--scrollbar-background);
+        height: 80px;
+        width: 75px;
+        transition: all 0.6s;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        cursor: pointer;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      
+      .saludo_bot:hover {
+        width: 200px;
+      }
+      
+      .saludo_bot:hover .bot_mensaje {
+        right: 5px;
+      }
+      
+      .bot_mensaje {
+        transition: right 0.6s;
+        margin-top: 10px;
+        margin-left: 10px;
+        position: fixed;
+        right: -130px;
+        min-width: 120px;
+        width: 120px;
+        height: 50px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+      }
+      
+      
+      
+      .bot {
+        margin-top: 5px;
+        float: left;
+        width: 70px;
+        height: 70px;
+      }
+      
+      .bot:hover {
+        cursor: pointer;
+      }
+      
+      
+      
+      /*  ##################################################  
+              ####      Estilo del contenedor del chat      ####
+              ##################################################  */
+      .floating-chat {
+        position: fixed;
+        right: 10px;
+        z-index: 100;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+      }
+      
+      
+      /*  ##################################################  
+              ####      Estilo del encabezado del chat      ####
+              ##################################################  */
+      .encabezado {
+        /* background: linear-gradient(to bottom, rgb(208,226,248),  rgb(204,238,254)) ; */
+        background: rgb(0, 166, 248);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 45px;
+        color: white;
+        width: var(--ancho-bot);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.6s, visibility 0.6s;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      .left {
+        padding-left: 15px;
+        padding-top: 5px;
+        width: 50%;
+      }
+      
+      .right {
+        padding-right: 10px;
+        padding-top: 10px;
+      }
+      
+      
+      /*  #########################################################################  
+              ####      Estilo del encabezado del chat para dispositivo movil      ####
+              #########################################################################  */
+      .encabezado_movil {
+        /* background: linear-gradient(to bottom, rgb(208,226,248),  rgb(204,238,254)) ; */
+        background: rgb(0, 166, 248);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 25px;
+        color: white;
+        width: var(--ancho-bot);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.6s, visibility 0.6s;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      .left_movil {
+        padding-left: 15px;
+        width: 50%;
+      }
+      
+      .right_movil {
+        padding-right: 10px;
+      }
+      
+      /*  ##################################################  
+              ####      Estilo de botoenes de encabezado    ####
+              ##################################################  */
+      .material-icons {
+        font-size: 22px;
+        color: white;
+      }
+      
+      .material-icons-translate {
+        font-size: 22px;
+        color: white;
+        margin-top: 0px;
+          margin-bottom: 0px
+      }
+      
+      .btn_encabezado {
+        background: transparent;
+        border: none;
+      }
+      
+      .btn_encabezado:focus {
+        border: none;
+        outline: 0;
+        box-shadow: 0px 0px 7px 1px #FFFFFF;
+        border-radius: 3px;
+      }
+      
+      .btn_encabezado:hover {
+        cursor: pointer;
+      }
+      
+      .btn_encabezado:disabled {
+        cursor: not-allowed;
+      }
+      
+      .btn_translate {
+         /* color: white !important;
+         font-size: 20px; */
+        background: transparent;
+        border: none;    
+      }
+      
+      .btn_translate:focus {
+        border: none;
+        outline: 0;
+        box-shadow: 0px 0px 7px 1px #FFFFFF;
+        border-radius: 3px;
+      }
+      
+      .btn_translate:hover {
+        cursor: pointer;
+      }
+      
+      .btn_translate:disabled {
+        cursor: not-allowed;
+      }
+      
+      /*  #########################################################################  
+              ####      Estilo de botoenes de encabezado para dispositivo movil    ####
+              #########################################################################  */
+      
+      .btn_encabezado_movil {
+        background: transparent;
+        border: none;
+        width: 40px;
+      }
+      
+      .btn_encabezado_movil:focus {
+        border: none;
+        outline: 0;
+        box-shadow: 0px 0px 7px 1px #FFFFFF;
+        border-radius: 3px;
+        width: 40px;
+      }
+      
+      .btn_encabezado_movil:hover {
+        cursor: pointer;
+      }
+      
+      .btn_encabezado_movil:disabled {
+        cursor: not-allowed;
+      }

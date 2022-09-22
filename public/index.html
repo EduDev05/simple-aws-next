@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <!-- PARA AÑADIR EL BOT -->
+  <script crossorigin="anonymous" src="https://cdn.botframework.com/botframework-webchat/4.11.0/webchat.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <title>TECbot</title>
+</head>
+
+<body>
+  <!-- hasta aqui estaba bien -->
+  <!-- <style type="text/css">
+      body {
+        background-color: rgb(34, 44, 50)
+      }
+
+      .encabezado_demo {
+        background-color: #1e262b; 
+        height: 72px; 
+        width: 100%; 
+        position: absolute; 
+        top:0; 
+        left:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      #webchat {
+      /* .webchat{ */
+        height: 213px;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.6s, visibility 0.6s;
+        position:absolute;
+        display: flex;
+        flex-direction: row;
+        height: 213px;
+        width: 360px;
+        top: 42px;
+        bottom: 0px;
+        left: 0px;
+      }
+      
+    </style> -->
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* #webchat {
+        height: 100%;
+        width: 100%;
+      } */
+
+    body {
+      background-color: transparent;
+    }
+
+    /* .encabezado_demo {
+      background-color: #1e262b;
+      height: 72px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    } */
+
+    #webchat {
+      /* .webchat{ */
+      /* height: 213px; */
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.6s, visibility 0.6s;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      /* height: 213px; */
+      height: 250px;
+      width: 360px;
+      top: 42px;
+      bottom: 0px;
+      left: 0px;
+      margin-bottom: 1rem !important;
+    }
+  </style>
+  <!-- <nav class="encabezado_demo">
+    <div class='left_demo'>
+      <img src="assets/mitec.png">
+      <h1 style="color: white;">Demo</h1>
+    </div>
+    <div class='right_demo'>
+      <img src="/assets/iconos.png">
+    </div>
+  </nav> -->
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <!-- <script>
+    (async function () {
+      // In this demo, we are using Direct Line token from MockBot.
+      // Your client code must provide either a secret or a token to talk to your bot.
+      // Tokens are more secure. To learn about the differences between secrets and tokens
+      // and to understand the risks associated with using secrets, visit https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0
+
+      //base
+      // const res = await fetch('https://webchat-mockbot.azurewebsites.net/directline/token', { method: 'POST' });
+      // const { token } = await res.json();
+      //fin base
+
+      //inicio nuestro
+      // const rawResponse = await fetch("https://mkt-tec-dev-webapi.azurewebsites.net/DirectLine", {
+      //   method: 'POST',
+      //   headers: {
+      //     'Accept': 'application/json',
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify({
+      //     userId: "dd",
+      //     name: "elnombrequesea"
+      //   })
+      // });
+      // const content = await rawResponse.json();
+      // console.log("elcontentw", content)
+
+      // let objjs = JSON.parse(content)
+
+      // let token = objjs.token
+      // let id = objjs.conversationId
+
+      //fin nuestro
+
+
+// pruebas
+
+    // Enviando información del usuario y renderizando el bot
+    // window.WebChat.renderWebChat(
+    //   {
+    //     userID: id,
+    //     username: "correomio@correo.com",
+
+    //     directLine : new DirectLine({
+    //       token: token,
+    //       conversationStartProperties: {
+    //           locale: localStorage.localeBot
+    //       },
+    //     }),
+            
+    //   },  document.getElementById('webchat')
+    // );
+
+// fin de pruebas
+
+
+
+
+
+    //   window.WebChat.renderWebChat(
+    //     {
+    //       directLine: window.WebChat.createDirectLine({ token })
+    //     },
+    //     document.getElementById('webchat')
+    //   );
+
+      
+    //   document.querySelector('#webchat > *').focus();
+    // })().catch(err => console.error(err));
+  </script> -->
+</body>
+
+</html>
